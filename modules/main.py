@@ -210,8 +210,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[ 🎥 ] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}.mkv\n✉️ 𝐁𝐚𝐭𝐜𝐡 » **{raw_text0}**'
-                cc1 = f'**[ 📁 ] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭}{MR}.pdf \n✉️ 𝐁𝐚𝐭𝐜𝐡 » **{raw_text0}**'
+                cc = f'**<pre><code>[ 🎥 ] Vid_ID:</code></pre>**<pre><code> {str(count).zfill(3)}</code></pre>.** <pre><code>{𝗻𝗮𝗺𝗲𝟭}{MR}.mkv</code></pre>\n<pre><code>✉️ 𝐁𝐚𝐭𝐜𝐡 » **{raw_text0}</code></pre>**'
+                cc1 = f'**<pre><code>[ 📁 ] Pdf_ID:</code></pre>**<pre><code> {str(count).zfill(3)}</code></pre>. <pre><code>{𝗻𝗮𝗺𝗲𝟭}{MR}.pdf</code></pre> \n<pre><code>✉️ 𝐁𝐚𝐭𝐜𝐡 » **{raw_text0}</code></pre>**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
